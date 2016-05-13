@@ -5,7 +5,7 @@ This repository is set up to help you learn how to add a custom symbol, created 
 ## Repository Sections
 This repository is broken down into two separate sections, tutorials and community samples. The tutorials section contains multiple walkthroughs, with documentation, about how to create very specific new symbols in PI Coresight. The community samples section contains sample symbols submitted by OSIsoft and the community show what they have done with PI Coresight's extensibilty model.
 
-* [Tutorials](/Tutorials/)
+* [Tutorials](/tutorials/)
 * [Community Samples](/Community Samples/)
 
 ## Licensing
