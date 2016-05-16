@@ -16,6 +16,7 @@ This repository is broken down into two separate sections, tutorials and communi
 Genearl contribution guidelines can be found [here](https://github.com/osisoft/contributing).
 
 For contributions to the community samples section:
+
 1. Create a personal/company folder under [Community Samples](/Community Samples/)
 1. Optionally, add a README.md file to that folder telling information about yourself or your company
 1. Create a subfolder for your new symbol
