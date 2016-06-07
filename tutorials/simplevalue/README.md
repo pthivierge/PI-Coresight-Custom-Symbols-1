@@ -85,7 +85,7 @@ In this section, you will be creating a simple value symbol, much like the curre
     ```
 
 1. Retry again in [PI Coresight][1] by adding the new symbol. The symbol can now be selected, moved, and is completely integrated into undo stack.
-1. Now that the infrastructure is in place, it is time to have the symbol do something. For this we will have to expand out the `init` function. We will add a parameter to the function, `scope`. [Scope](https://docs.angularjs.org/guide/scope) is an object borrowed from [AngularJS 1](https://angularjs.org) that allows the implementation and the presentation to communicate with each other. The `init` funciton will also have a function inside it to handle when the symbol receives new data. Last we will add a return to the `init` function, to let the PI Coresight infrastructure know how to communicate with the symbol.
+1. Now that the infrastructure is in place, it is time to have the symbol do something. For this we will have to expand out the `init` function. We will add a parameter to the function, `scope`. [Scope](https://docs.angularjs.org/guide/scope) is an object borrowed from [AngularJS 1](https://angularjs.org) that allows the implementation and the presentation to communicate with each other. The `init` function will also have a function inside it to handle when the symbol receives new data. Last we will add a return to the `init` function, to let the PI Coresight infrastructure know how to communicate with the symbol.
 
     ```javascript
     function init(scope) {
@@ -271,7 +271,7 @@ In this section, you will be creating a simple value symbol, much like the curre
     };
     ```
 
-1. Now by launching [PI Coresight][1], you will see when right click on the symbol, you get a context menu with the option to add the multistate. After selecting this option, the multistate configuration pane will open and the symbol will be use it's configured data point as it's multistate data point as well. 
+1. Now by launching [PI Coresight][1], you will see when right click on the symbol, you get a context menu with the option to add the multistate. After selecting this option, the multistate configuration pane will open and the symbol will be using it's configured data point as it's multistate data point as well. 
 1. Now it is time to make the multistate affect the symbol. We will have the multistate control the color of the text displayed. To do this, we will edit the symbol's template HTML, `sym-simplevalue-template.html`. The name used in the `StateVariables` section of the symbol definition needs to be used in the symbol template, but does not need to be `MultistateColor`. Here we are telling the binding system that that color used for the symbol should be `MultistateColor` if it is defined, i.e. this symbol was configured with a multistate, or use the configured TextColor if `MultistateColor` is not defined.
 
 	```html
